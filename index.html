@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruenne Genusswelt</title>
+    <meta name="description"
+        content="Geniale köstliche pflanzliche Gerichte für eine gesunde Ernährung und einen nachhaltigen Lebensstil">
+    <meta name="author" content="Vanessa Kollburg">
+    <link rel="icon" type="image/x-icon" href="images/carrot-logo.png">
+    <meta name="robots" contents="index,follow">
+    <link rel="stylesheet" href="assets/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/section.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="flex align-center px-2">
+            <img src="images/carrot-logo.png" alt="Karotten Logo">
+            <ul class="flex">
+                <li><a href="#rezepte">Rezepte</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="bi bi-heart"></i></a>
+                <a href="#"><i class="bi bi-search"></i></a>
+            </div>
+            <button class="hamburger" onclick="openNav()">
+                <i class="bi bi-list"></i>
+            </button>
+
+        </nav>
+        <!-- Overlay -->
+        <div id="myNav" class="overlay display-none px-2 py-2">
+            <button class="closebtn" onclick="closeNav()">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="overlay-content flex">
+                <ul class="flex">
+                    <li><a href="#rezepte">Rezepte</a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero flex align-center">
+            <div class="cta flex px-3 py-3">
+                <div class="text">
+                    <div class="heading-subheading">
+                        <h1>Grüne Genusswelt</h1>
+                        <p class="subheading">Entdecke die Vielfalt der nachhaltgigen Küche</p>
+                    </div>
+                </div>
+                <div class="buttons-container flex">
+                    <a href="#" class="btn btn-primary">Rezepte stöbern</a>
+                    <a href="#" class="btn btn-secondary">Mehr Erfahrungen</a>
+                </div>
+            </div>
+
+        </section>
+        <!-- Rezepte -->
+        <section class="rezepte flex align-center py-4">
+            <div class="card-container grid">
+                <div class="card">
+                    <img src="images/rezept-1.jpg" alt="bild einer quinoa bowl">
+                    <h3>Quinoa-Power-Bowl mit geröstetem gemüse</h3>
+                    <a href="#" class="btn btn-primary">Zum Rezept <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+
+                <div class="card">
+                    <img src="images/rezept-2.jpg" alt="bild eines curry gerichts">
+                    <h3>Bunte Gemüsepfanne mit aromatischem knoblauch-Dressing</h3>
+                    <a href="#" class="btn btn-primary">Zum Rezept <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+
+                <div class="card">
+                    <img src="images/rezept-3.jpg" alt="bild eines curry gerichts">
+                    <h3>Vegane Lasagne mit cremiger Cashew-Bechamel </h3>
+                    <a href="#" class="btn btn-primary">Zum Rezept <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+                <div class="card">
+                    <img src="images/rezept-4.jpg" alt="bild eines curry gerichts">
+                    <h3>Asiatische Bowl mit Teriyaki-Tofu und knackigem Gemüse</h3>
+                    <a href="#" class="btn btn-primary">Zum Rezept <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </section>
+        <!-- Newsletter -->
+        <section class="newsletter flex px-4 py-4 justify-center text-align-center">
+            <div class="flex">
+                <h2>Abonniere unseren Newsletter</h2>
+                <p class="subheading">Jeden Tag ein neues Rezept in deiner Inbox. Lecker, nachhaltig und vielfältig.</p>
+            </div>
+
+            <form action="" class="newsletter-form flex">
+                <div class="checkboxes flex justify-center">
+                    <div class="checkbox-1 flex">
+                        <input type="checkbox" name="weekly" id="weekly">
+                        <label for="weekly">Wöchentliche News</label>
+                    </div>
+                    <div class="checkbox-2 flex">
+                        <input type="checkbox" name="daily" id="daily">
+                        <label for="daily">Tägliche Rezepte</label>
+                    </div>
+                </div>
+                <div class="anmelden flex justify-center">
+                    <div class="flex text-align-left">
+                        <label for="email">E-mail Adresse</label>
+                        <input class="px-1" type="email" name="email" placeholder="E-mail Adresse eingeben">
+                    </div>
+                    <input class="btn btn-primary" type="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="flex py-4 px-4">
+        <div class="contact flex">
+            <h4>Kontakt</h4>
+            <address>
+                Frankfurter Tor 93<br>
+                10243 Berlin
+            </address>
+
+            <ul>
+                <li><a href="tel:0191234567">0191 23 45 67</a></li>
+                <li><a href="mailto:info@genuss.com">info@genuss.com</a></li>
+            </ul>
+
+        </div>
+        <div class="rechtliches flex">
+            <h4>Rechtliches</h4>
+
+            <ul>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz/a></li>
+            </ul>
+        </div>
+        <div class="social-icons flex">
+            <a aria-label="instagram" href="#"><i class="bi bi-instagram"></i></a>
+            <a aria-label="facebook" href="#"><i class="bi bi-facebook"></i></a>
+            <a aria-label="pinterest" href="#"><i class="bi bi-pinterest"></i></a>
+        </div>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").classList.add("display-block");
+            document.querySelector("body").style.overflow = "hidden";
+        }
+        function closeNav() {
+            document.getElementById("myNav").classList.remove("display-block");
+            document.querySelector("body").style.overflow = "visible";
+        }
+    </script>
+</body>
+
+</html>
